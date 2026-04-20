@@ -29,14 +29,15 @@ const WhyUs = () => {
   return (
     <section className="bg-[#eef0f1] py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 lg:grid-cols-2">
+        
         {/* IZQUIERDA */}
         <div className="relative">
-          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-yellow-500 lg:block [writing-mode:vertical-rl]">
+          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-[#E4B525] lg:block [writing-mode:vertical-rl]">
             Fisioprotema
           </span>
 
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-yellow-300 px-5 py-2 text-sm font-bold text-black">
+            <span className="inline-block rounded-full bg-[#E4B525] px-5 py-2 text-sm font-bold text-black">
               Nuestro valor
             </span>
 
@@ -51,8 +52,9 @@ const WhyUs = () => {
             </p>
 
             <div className="mt-10 space-y-8">
+              
               <div>
-                <h3 className="text-2xl font-extrabold text-black">
+                <h3 className="text-2xl font-extrabold text-[#E4B525]">
                   Atención 100% personalizada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
@@ -61,7 +63,7 @@ const WhyUs = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-black">
+                <h3 className="text-2xl font-extrabold text-[#E4B525]">
                   Experiencia y profesionalidad
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
@@ -70,7 +72,7 @@ const WhyUs = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-black">
+                <h3 className="text-2xl font-extrabold text-[#E4B525]">
                   Resultados desde la primera sesión
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
@@ -79,13 +81,14 @@ const WhyUs = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-black">
+                <h3 className="text-2xl font-extrabold text-[#E4B525]">
                   Trato cercano y humano
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
                   Nos implicamos contigo en todo el proceso de recuperación.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
@@ -117,7 +120,7 @@ const WhyUs = () => {
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-yellow-400"></div>
+          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-[#E4B525]"></div>
 
           <div className="mt-6 flex items-center justify-center gap-3">
             {slides.map((_, index) => (
@@ -126,7 +129,7 @@ const WhyUs = () => {
                 type="button"
                 onClick={() => setCurrentSlide(index)}
                 className={`h-3 w-3 rounded-full transition ${
-                  currentSlide === index ? 'bg-yellow-400' : 'bg-black/20'
+                  currentSlide === index ? 'bg-[#E4B525]' : 'bg-black/20'
                 }`}
                 aria-label={`Ir a imagen ${index + 1}`}
               />
