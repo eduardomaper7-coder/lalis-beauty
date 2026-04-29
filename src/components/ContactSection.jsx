@@ -2,110 +2,118 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
 
 const ContactSection = () => {
   return (
-    <section id="contacto" className="scroll-mt-28 bg-[#f5f8fb] py-24">
+    <section id="contacto" className="scroll-mt-28 bg-[#f6fbf7] py-24">
       <div className="mx-auto max-w-4xl px-4">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-[#2F4F7F] sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl">
             Contacto
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-neutral-600">
-            Estamos aquí para ayudarte. Contáctanos para reservar una cita o solicitar más información.
+            Estamos aquí para ayudarte. Contacta con Clínica Odontológica Dra. Anna Tavarone para reservar tu cita.
           </p>
         </div>
 
         <div className="space-y-5">
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(47,79,127,0.08)]">
-            <div className="pt-1 text-xl text-[#2F4F7F]">
+          
+          {/* Dirección */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+            <div className="pt-1 text-xl text-green-700">
               <FaMapMarkerAlt />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#2F4F7F]">Dirección</h3>
-              <p className="mt-2 text-lg leading-8 text-neutral-600">
-                C. de la Pilarica, 37, Usera, 28026 Madrid
+              <h3 className="text-xl font-bold text-green-700">Dirección</h3>
+              <p className="mt-2 text-lg text-neutral-600">
+                C. de Nicolás Sánchez, 4, 1º Izquierda, Usera, 28026 Madrid
               </p>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(47,79,127,0.08)]">
-            <div className="pt-1 text-xl text-[#2F4F7F]">
+          {/* Teléfono */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+            <div className="pt-1 text-xl text-green-700">
               <FaPhoneAlt />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#2F4F7F]">Teléfono</h3>
+              <h3 className="text-xl font-bold text-green-700">Teléfono</h3>
               <a
-                href="tel:914768665"
-                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-[#2F4F7F]"
+                href="tel:914763069"
+                className="mt-2 block text-lg text-neutral-600 transition hover:text-green-700"
               >
-                914 76 86 65
+                914 76 30 69
               </a>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(47,79,127,0.08)]">
-            <div className="pt-1 text-xl text-[#2F4F7F]">
+          {/* Email */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+            <div className="pt-1 text-xl text-green-700">
               <FaEnvelope />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#2F4F7F]">Email</h3>
+              <h3 className="text-xl font-bold text-green-700">Email</h3>
               <a
-                href="mailto:info@ebocaarte.es"
-                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-[#2F4F7F]"
+                href="mailto:info@clinicaodontologica.com"
+                className="mt-2 block text-lg text-neutral-600 transition hover:text-green-700"
               >
-                info@ebocaarte.es
+                info@clinicaodontologica.com
               </a>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(47,79,127,0.08)]">
-            <div className="pt-1 text-xl text-[#2F4F7F]">
+          {/* Horario */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+            <div className="pt-1 text-xl text-green-700">
               <FaClock />
             </div>
 
             <div className="w-full">
-              <h3 className="text-xl font-bold text-[#2F4F7F]">Horario</h3>
+              <h3 className="text-xl font-bold text-green-700">Horario</h3>
 
               <div className="mt-4 space-y-3 text-lg text-neutral-700">
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Lunes</span>
-                  <span>10:00–14:00 · 16:00–20:00</span>
+
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Lunes</span>
+                  <span>11:00–14:00 · 16:30–20:00</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Martes</span>
-                  <span>10:00–14:00 · 16:00–20:00</span>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Martes</span>
+                  <span>11:00–14:00 · 16:30–20:00</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Miércoles</span>
-                  <span>10:00–14:00 · 16:00–20:00</span>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Miércoles</span>
+                  <span>11:00–14:00 · 16:30–20:00</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Jueves</span>
-                  <span>10:00–14:00 · 16:00–20:00</span>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Jueves</span>
+                  <span>11:00–14:00 · 16:30–20:00</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Viernes</span>
-                  <span>10:00–14:00 · 16:00–20:00</span>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Viernes</span>
+                  <span>11:00–14:00 · 16:30–20:00</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Sábado</span>
-                  <span>10:00–14:00</span>
-                </div>
-
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-                  <span className="font-semibold text-[#2F4F7F]">Domingo</span>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Sábado</span>
                   <span>Cerrado</span>
                 </div>
+
+                <div className="flex justify-between">
+                  <span className="font-semibold text-green-700">Domingo</span>
+                  <span>Cerrado</span>
+                </div>
+
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

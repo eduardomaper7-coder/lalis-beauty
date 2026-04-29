@@ -29,12 +29,12 @@ const conditions = [
 
 const Pricing = () => {
   return (
-    <section id="tarifas" className="scroll-mt-28 bg-[#f5f8fb] py-24 pb-12">
+    <section id="tarifas" className="scroll-mt-28 bg-[#f6fbf7] py-24 pb-12">
       <div className="mx-auto max-w-7xl px-4">
         
         {/* Título */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-[#2F4F7F] sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl">
             Nuestras tarifas
           </h2>
 
@@ -48,13 +48,13 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <article
               key={index}
-              className="rounded-xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(47,79,127,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(47,79,127,0.12)]"
+              className="rounded-xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(22,101,52,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.12)]"
             >
-              <h3 className="text-2xl font-extrabold text-[#2F4F7F]">
+              <h3 className="text-2xl font-extrabold text-green-700">
                 {plan.title}
               </h3>
 
-              <p className="mt-5 text-4xl font-extrabold tracking-tight text-[#2F4F7F]">
+              <p className="mt-5 text-4xl font-extrabold tracking-tight text-green-700">
                 {plan.price}
               </p>
 
@@ -64,7 +64,7 @@ const Pricing = () => {
 
               {plan.badge && (
                 <div className="mt-5">
-                  <span className="inline-flex rounded-full bg-[#2F4F7F] px-4 py-1.5 text-sm font-bold text-white">
+                  <span className="inline-flex rounded-full bg-green-700 px-4 py-1.5 text-sm font-bold text-white">
                     {plan.badge}
                   </span>
                 </div>
@@ -74,15 +74,15 @@ const Pricing = () => {
         </div>
 
         {/* Condiciones */}
-        <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-white px-8 py-10 shadow-[0_10px_30px_rgba(47,79,127,0.08)]">
-          <h3 className="text-center text-2xl font-extrabold text-[#2F4F7F]">
+        <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-white px-8 py-10 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+          <h3 className="text-center text-2xl font-extrabold text-green-700">
             Condiciones Generales
           </h3>
 
           <div className="mt-8 space-y-5">
             {conditions.map((condition, index) => (
               <div key={index} className="flex items-start gap-4">
-                <span className="mt-1 text-xl font-bold text-[#2F4F7F]">✓</span>
+                <span className="mt-1 text-xl font-bold text-green-700">✓</span>
                 <p className="text-lg leading-8 text-neutral-700">
                   {condition}
                 </p>

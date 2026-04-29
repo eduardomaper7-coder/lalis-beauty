@@ -11,7 +11,7 @@ const slides = [
     image:
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
     alt: 'Clínica dental moderna',
-    badge: 'Tecnología dental para cuidar tu sonrisa',
+    badge: 'Cuidamos tu sonrisa con atención de confianza',
   },
 ]
 
@@ -27,37 +27,32 @@ const WhyUs = () => {
   }, [])
 
   return (
-    <section className="bg-[#f5f8fb] py-24">
+    <section className="bg-[#f6fbf7] py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 lg:grid-cols-2">
         
-        {/* IZQUIERDA */}
         <div className="relative">
-          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-[#2F4F7F] lg:block [writing-mode:vertical-rl]">
-            E-Boca&Arte
+          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-green-700 lg:block [writing-mode:vertical-rl]">
+            Dra. Anna Tavarone
           </span>
 
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-[#2F4F7F] px-5 py-2 text-sm font-bold text-white">
+            <span className="inline-block rounded-full bg-green-700 px-5 py-2 text-sm font-bold text-white">
               Nuestro valor
             </span>
 
-            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-[#2F4F7F] sm:text-5xl">
-              ¿Por qué elegir{' '}
-              <span className="whitespace-nowrap">
-                E-Boca&Arte
-              </span>
-              ?
+            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-green-700 sm:text-5xl">
+              ¿Por qué elegir nuestra clínica?
             </h2>
 
             <p className="mt-6 text-lg leading-9 text-neutral-700">
-              En E-Boca&Arte cuidamos tu salud bucodental con una atención
-              cercana, tratamientos personalizados y un equipo comprometido con
-              tu sonrisa.
+              En Clínica Odontológica Dra. Anna Tavarone cuidamos tu salud
+              bucodental con una atención cercana, tratamientos personalizados
+              y un trato profesional de confianza.
             </p>
 
             <div className="mt-10 space-y-8">
               <div>
-                <h3 className="text-2xl font-extrabold text-[#2F4F7F]">
+                <h3 className="text-2xl font-extrabold text-green-700">
                   Atención personalizada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
@@ -66,38 +61,37 @@ const WhyUs = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#2F4F7F]">
-                  Equipo profesional
+                <h3 className="text-2xl font-extrabold text-green-700">
+                  Trato cercano
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Contamos con especialistas preparados para cuidar tu salud oral.
+                  Queremos que te sientas cómodo, escuchado y seguro desde la primera visita.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#2F4F7F]">
-                  Tratamientos modernos
+                <h3 className="text-2xl font-extrabold text-green-700">
+                  Salud y estética dental
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Aplicamos soluciones actuales en odontología, estética dental e implantes.
+                  Trabajamos para mejorar tanto la salud de tu boca como la estética de tu sonrisa.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#2F4F7F]">
-                  Trato cercano y de confianza
+                <h3 className="text-2xl font-extrabold text-green-700">
+                  Experiencia profesional
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Queremos que te sientas cómodo desde la primera visita.
+                  Te acompañamos en cada paso con explicaciones claras y soluciones adaptadas.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* DERECHA - SLIDER */}
         <div className="relative">
-          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(47,79,127,0.18)]">
+          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(22,101,52,0.18)]">
             <div className="relative h-[540px] w-full">
               {slides.map((slide, index) => (
                 <img
@@ -112,17 +106,17 @@ const WhyUs = () => {
                 />
               ))}
 
-              <div className="absolute inset-0 bg-[#2F4F7F]/20"></div>
+              <div className="absolute inset-0 bg-green-900/20"></div>
 
               <div className="absolute left-6 top-6 z-10 max-w-sm rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur-sm">
-                <p className="text-base font-bold leading-7 text-[#2F4F7F]">
+                <p className="text-base font-bold leading-7 text-green-700">
                   {slides[currentSlide].badge}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-[#2F4F7F]"></div>
+          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-green-700"></div>
 
           <div className="mt-6 flex items-center justify-center gap-3">
             {slides.map((_, index) => (
@@ -131,7 +125,7 @@ const WhyUs = () => {
                 type="button"
                 onClick={() => setCurrentSlide(index)}
                 className={`h-3 w-3 rounded-full transition ${
-                  currentSlide === index ? 'bg-[#2F4F7F]' : 'bg-black/20'
+                  currentSlide === index ? 'bg-green-700' : 'bg-black/20'
                 }`}
                 aria-label={`Ir a imagen ${index + 1}`}
               />

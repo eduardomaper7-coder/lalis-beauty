@@ -4,27 +4,28 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/hero-dentista-usera.jpg')", // 👈 tu imagen aquí
+        backgroundImage: "url('/hero-dentista-usera.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
       }}
     >
-      {/* Overlay azul suave */}
-      <div className="absolute inset-0 bg-[#2F4F7F]/45"></div>
+      {/* Overlay verde suave */}
+      <div className="absolute inset-0 bg-green-900/45"></div>
 
       {/* Degradado */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#2F4F7F]/20 via-[#2F4F7F]/35 to-[#1C355E]/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-green-700/20 via-green-800/35 to-green-950/75"></div>
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pb-16 pt-28 text-center">
         
         <div className="mb-6 flex flex-col items-center">
           <span className="text-2xl font-light tracking-widest text-white/80">
-            CLÍNICA DENTAL
+            CLÍNICA ODONTOLÓGICA
           </span>
+
           <span className="text-3xl font-extrabold tracking-wide text-white md:text-4xl">
-            E-Boca<span className="text-white/80">&</span>Arte
+            Dra. Anna Tavarone
           </span>
         </div>
 
@@ -33,28 +34,29 @@ const Hero = () => {
         </h1>
 
         <p className="mt-8 max-w-3xl text-lg leading-9 text-white/90 sm:text-xl">
-          Tratamientos de odontología general, ortodoncia, estética dental,
-          implantes y prótesis con un enfoque cercano, profesional y moderno
-          para cuidar tu sonrisa.
+          Cuidamos tu salud bucodental con tratamientos personalizados,
+          atención cercana y un enfoque profesional para ayudarte a mantener
+          una sonrisa sana y bonita.
         </p>
 
         <div className="mt-10">
           <div className="rounded-2xl bg-white/95 px-8 py-6 shadow-xl backdrop-blur">
-            <p className="text-base font-medium text-[#2F4F7F]">
+            <p className="text-base font-medium text-green-700">
               Pide cita llamando al
             </p>
+
             <a
-              href="tel:914768665"
-              className="mt-2 block text-2xl font-extrabold text-[#2F4F7F] hover:underline"
+              href="tel:914763069"
+              className="mt-2 block text-2xl font-extrabold text-green-700 hover:underline"
             >
-              914 76 86 65
+              914 76 30 69
             </a>
           </div>
         </div>
 
         <a
           href="#servicios"
-          className="mt-6 inline-flex items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-[#2F4F7F]"
+          className="mt-6 inline-flex items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-green-700"
         >
           Nuestros servicios
         </a>

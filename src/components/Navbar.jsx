@@ -5,36 +5,36 @@ const Navbar = () => {
         
         {/* Logo texto */}
         <a href="#inicio" className="flex shrink-0 items-center">
-          <span className="text-xl font-extrabold text-[#2F4F7F] md:text-2xl">
-            E-Boca<span className="text-[#2F4F7F]">&</span>Arte
+          <span className="text-lg font-extrabold text-green-700 md:text-xl">
+            Clínica Odontológica
+            <span className="block text-sm font-semibold text-green-600">
+              Dra. Anna Tavarone
+            </span>
           </span>
         </a>
 
-        {/* Navegación */}
+        {/* Menú */}
         <nav className="hidden items-center gap-6 md:flex">
-          <a href="#inicio" className="text-base font-semibold text-black transition hover:text-[#2F4F7F]">
+          <a href="#inicio" className="text-base font-semibold text-black hover:text-green-600">
             Inicio
           </a>
-
-          <a href="#servicios" className="text-base font-semibold text-black transition hover:text-[#2F4F7F]">
+          <a href="#servicios" className="text-base font-semibold text-black hover:text-green-600">
             Servicios
           </a>
-
-          <a href="#tarifas" className="text-base font-semibold text-black transition hover:text-[#2F4F7F]">
+          <a href="#tarifas" className="text-base font-semibold text-black hover:text-green-600">
             Tarifas
           </a>
-
-          <a href="#contacto" className="text-base font-semibold text-black transition hover:text-[#2F4F7F]">
+          <a href="#contacto" className="text-base font-semibold text-black hover:text-green-600">
             Contacto
           </a>
         </nav>
 
         {/* Botón llamar */}
         <a
-          href="tel:914768665"
-          className="inline-flex items-center rounded-lg bg-[#2F4F7F] px-5 py-2.5 text-sm font-bold !text-white transition hover:bg-[#243f68]"
+          href="tel:914763069"
+          className="inline-flex items-center rounded-lg bg-green-600 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-green-700"
         >
-          Llama al 914 76 86 65
+          Llama al 914 76 30 69
         </a>
 
       </div>
