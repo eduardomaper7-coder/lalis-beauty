@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 
-import TopBar from './components/TopBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Treatments from './components/Treatments'
@@ -17,8 +16,6 @@ import AllTreatments from './components/AllTreatments'
 
 const Home = () => (
   <>
-    <TopBar />
-
     <div className="relative">
       <Navbar />
       <Hero />
@@ -47,7 +44,6 @@ function App() {
           path="/tratamientos"
           element={
             <>
-              <TopBar />
               <Navbar />
               <AllTreatments />
               <Footer />
