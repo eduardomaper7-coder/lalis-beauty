@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const services = [
   {
     title: 'Fundas de porcelana y siliconio',
@@ -49,9 +51,9 @@ const Treatments = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.16)]"
+              className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.16)] sm:flex-row"
             >
-              <div className="w-[40%]">
+              <div className="h-56 w-full sm:h-auto sm:w-[40%]">
                 <img
                   src={service.image}
                   alt={`${service.title} en Usera - Clínica Dental Dra. Anna Tavarone`}
@@ -60,7 +62,7 @@ const Treatments = () => {
                 />
               </div>
 
-              <div className="flex w-[60%] flex-col justify-between p-6">
+              <div className="flex w-full flex-col justify-between p-6 sm:w-[60%]">
                 <div>
                   <h3 className="text-xl font-extrabold text-green-700 sm:text-2xl">
                     {service.title}
@@ -72,12 +74,12 @@ const Treatments = () => {
                 </div>
 
                 <div className="mt-6">
-                  <a
-                    href="/tratamientos"
+                  <Link
+                    to="/tratamientos"
                     className="inline-flex items-center gap-2 text-base font-semibold text-green-700 transition hover:text-green-900"
                   >
-                    Pedir información →
-                  </a>
+                    Más información →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,12 +91,12 @@ const Treatments = () => {
             ¿Buscas otro tratamiento dental?
           </p>
 
-          <a
-            href="/tratamientos"
+          <Link
+            to="/tratamientos"
             className="mt-5 inline-flex items-center rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
           >
             Ver todos los tratamientos
-          </a>
+          </Link>
         </div>
       </div>
     </section>

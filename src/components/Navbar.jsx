@@ -10,17 +10,32 @@ const Navbar = () => {
               CLÍNICA DENTAL
             </span>
 
-            {/* Oculto en móvil */}
             <span className="hidden text-sm font-semibold text-green-600 md:block">
               Dra. Anna Tavarone · Usera
             </span>
           </div>
         </a>
 
+        {/* MENÚ (solo escritorio) */}
+        <nav className="hidden items-center gap-6 md:flex">
+          <a href="#inicio" className="text-base font-semibold text-black hover:text-green-600">
+            Inicio
+          </a>
+          <a href="#servicios" className="text-base font-semibold text-black hover:text-green-600">
+            Tratamientos
+          </a>
+          <a href="#tarifas" className="text-base font-semibold text-black hover:text-green-600">
+            Precios
+          </a>
+          <a href="#contacto" className="text-base font-semibold text-black hover:text-green-600">
+            Contacto
+          </a>
+        </nav>
+
         {/* Botón llamar */}
         <a
           href="tel:914763069"
-          className="rounded-lg bg-green-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-green-700 md:px-5 md:py-2.5 md:text-sm whitespace-nowrap"
+          className="whitespace-nowrap rounded-lg bg-green-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-green-700 md:px-5 md:py-2.5 md:text-sm"
         >
           📞 <span className="hidden md:inline">Llama al</span> 914 76 30 69
         </a>
@@ -29,3 +44,5 @@ const Navbar = () => {
     </header>
   )
 }
+
+export default Navbar

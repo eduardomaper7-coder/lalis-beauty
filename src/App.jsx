@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router-dom'
+
 import TopBar from './components/TopBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -13,39 +15,46 @@ import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import AllTreatments from './components/AllTreatments'
 
+const Home = () => (
+  <>
+    <TopBar />
+
+    <div className="relative">
+      <Navbar />
+      <Hero />
+    </div>
+
+    <Treatments />
+    <WhyUs />
+    <FeaturedBox />
+    <HowWeWork />
+    <Testimonials />
+    <Pricing />
+    <BlogSection />
+    <Location />
+    <ContactSection />
+    <Footer />
+  </>
+)
+
 function App() {
-  const isTreatmentsPage = window.location.pathname === '/tratamientos'
-
-  if (isTreatmentsPage) {
-    return (
-      <main className="bg-white text-black">
-        <TopBar />
-        <Navbar />
-        <AllTreatments />
-        <Footer />
-      </main>
-    )
-  }
-
   return (
     <main className="bg-white text-black">
-      <TopBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <div className="relative">
-        <Navbar />
-        <Hero />
-      </div>
-
-      <Treatments />
-      <WhyUs />
-      <FeaturedBox />
-      <HowWeWork />
-      <Testimonials />
-      <Pricing />
-      <BlogSection />
-      <Location />
-      <ContactSection />
-      <Footer />
+        <Route
+          path="/tratamientos"
+          element={
+            <>
+              <TopBar />
+              <Navbar />
+              <AllTreatments />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
     </main>
   )
 }
