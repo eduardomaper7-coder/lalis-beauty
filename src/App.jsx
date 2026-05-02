@@ -13,6 +13,7 @@ import Location from './components/Location'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import AllTreatments from './components/AllTreatments'
+import Legal from './pages/Legal'
 
 const Home = () => (
   <>
@@ -46,6 +47,17 @@ function App() {
             <>
               <Navbar />
               <AllTreatments />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/legal"
+          element={
+            <>
+              <Navbar />
+              <Legal />
               <Footer />
             </>
           }

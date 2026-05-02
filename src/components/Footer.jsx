@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                 CLÍNICA DENTAL
               </span>
               <span className="block text-green-600 text-lg font-semibold">
-                Dra. Anna Tavarone · Usera
+                Dra. Anna Tavarone
               </span>
             </div>
 
@@ -67,36 +68,30 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* CTA extra (muy bueno para conversión) */}
+        {/* CTA */}
         <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-lg text-white/90">
             ¿Necesitas pedir cita o más información?
           </p>
 
-          <a
-            href="/#contacto"
+          <Link
+            to="/#contacto"
             className="rounded-xl bg-green-600 px-8 py-3 text-lg font-bold text-white transition hover:bg-green-700"
           >
             Solicitar cita
-          </a>
+          </Link>
         </div>
 
         {/* Footer bottom */}
         <div className="mt-12 border-t border-white/15 pt-8 text-center">
           <p className="text-base text-white/80">
-            © 2026 Clínica Dental Dra. Anna Tavarone · Usera. Todos los derechos reservados.
+            © 2026 Clínica Dental Dra. Anna Tavarone. Todos los derechos reservados.
           </p>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-green-600">
-            <a href="#" className="transition hover:text-white">
-              Política de cookies
-            </a>
-            <a href="#" className="transition hover:text-white">
-              Política de privacidad
-            </a>
-            <a href="#" className="transition hover:text-white">
-              Aviso legal
-            </a>
+            <Link to="/legal" className="transition hover:text-white">
+              Aviso legal · Privacidad · Cookies
+            </Link>
           </div>
         </div>
       </div>
