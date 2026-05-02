@@ -3,22 +3,24 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 py-16">
+      <div className="mx-auto max-w-7xl px-4 py-14">
         <div className="grid gap-12 md:grid-cols-2 md:items-start">
           
           {/* Info */}
           <div>
-            <div className="mb-6">
-              <span className="text-2xl font-extrabold text-white">
-                Clínica Odontológica
-                <span className="block text-green-600">
-                  Dra. Anna Tavarone
-                </span>
+            <div className="mb-6 leading-tight">
+              <span className="block text-2xl font-extrabold text-white">
+                CLÍNICA DENTAL
+              </span>
+              <span className="block text-green-600 text-lg font-semibold">
+                Dra. Anna Tavarone · Usera
               </span>
             </div>
 
-            <p className="max-w-2xl text-xl leading-relaxed text-white/90">
-              Clínica dental especializada en salud bucodental y estética, con tratamientos personalizados para cuidar tu sonrisa.
+            <p className="max-w-2xl text-lg leading-relaxed text-white/90">
+              Clínica dental en Usera con más de 30 años de experiencia. 
+              Especialistas en tratamientos personalizados para cuidar tu salud 
+              bucodental y mejorar tu sonrisa.
             </p>
 
             <div className="mt-8 flex items-center gap-5">
@@ -38,34 +40,54 @@ const Footer = () => {
           <div className="text-left md:text-right">
             <h3 className="text-3xl font-bold text-green-600">Contacto</h3>
 
-            <div className="mt-6 space-y-4 text-xl leading-relaxed">
-              <p>C. de Nicolás Sánchez, 4, 1º Izquierda, Usera, 28026 Madrid</p>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed">
+              <p>
+                C. de Nicolás Sánchez, 4, 1º Izquierda<br />
+                Usera, 28026 Madrid
+              </p>
 
               <p>
-                <a href="tel:914763069" className="transition hover:text-green-600">
+                <a
+                  href="tel:914763069"
+                  className="whitespace-nowrap font-bold text-white transition hover:text-green-600"
+                >
                   914 76 30 69
                 </a>
               </p>
 
               <p>
                 <a
-                  href="mailto:info@clinicaodontologica.com"
+                  href="mailto:info@clinicadentalannarone.com"
                   className="text-green-600 transition hover:text-white"
                 >
-                  info@clinicaodontologica.com
+                  info@clinicadentalannarone.com
                 </a>
               </p>
             </div>
           </div>
         </div>
 
-        {/* Footer bottom */}
-        <div className="mt-12 border-t border-white/15 pt-8 text-center">
+        {/* CTA extra (muy bueno para conversión) */}
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-lg text-white/90">
-            © 2026 Clínica Odontológica Dra. Anna Tavarone. Todos los derechos reservados.
+            ¿Necesitas pedir cita o más información?
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base text-green-600">
+          <a
+            href="/#contacto"
+            className="rounded-xl bg-green-600 px-8 py-3 text-lg font-bold text-white transition hover:bg-green-700"
+          >
+            Solicitar cita
+          </a>
+        </div>
+
+        {/* Footer bottom */}
+        <div className="mt-12 border-t border-white/15 pt-8 text-center">
+          <p className="text-base text-white/80">
+            © 2026 Clínica Dental Dra. Anna Tavarone · Usera. Todos los derechos reservados.
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-green-600">
             <a href="#" className="transition hover:text-white">
               Política de cookies
             </a>

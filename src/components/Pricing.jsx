@@ -1,96 +1,111 @@
 const plans = [
   {
-    title: 'Tratamientos dentales',
-    price: 'A consultar',
-    subtitle: 'Presupuesto personalizado según tu caso',
-    badge: '',
+    title: 'Empaste dental',
+    price: '80€',
+    subtitle: 'Tratamiento conservador para reparar caries o pequeñas fracturas.',
+    badge: 'Precio orientativo',
   },
   {
-    title: 'Odontología estética',
-    price: 'A consultar',
-    subtitle: 'Valoración individual y plan adaptado',
-    badge: '',
+    title: 'Endodoncia',
+    price: '220€',
+    subtitle: 'Tratamiento para salvar dientes dañados o con infección.',
+    badge: 'Desde',
   },
   {
-    title: 'Revisiones y salud bucodental',
-    price: 'A consultar',
-    subtitle: 'Te informamos antes de empezar cualquier tratamiento',
-    badge: '',
+    title: 'Funda de porcelana',
+    price: '270€',
+    subtitle: 'Solución estética y resistente para proteger y mejorar el diente.',
+    badge: 'Desde',
+  },
+  {
+    title: 'Funda de siliconio',
+    price: '420€',
+    subtitle: 'Opción funcional y adaptada según las necesidades de cada paciente.',
+    badge: 'Desde',
   },
 ]
 
 const conditions = [
+  'Estos son solo algunos de nuestros precios más habituales.',
   'Cada tratamiento requiere una valoración previa personalizada.',
-  'El presupuesto puede variar según las necesidades de cada paciente.',
-  'Antes de comenzar, te explicaremos el tratamiento y las opciones disponibles.',
-  'La anulación de una cita deberá ser notificada con antelación.',
-  'Para más información, contacta con la clínica.',
+  'El presupuesto final puede variar según las necesidades de cada paciente.',
+  'Antes de comenzar, te explicaremos el tratamiento, las opciones disponibles y el precio final.',
+  'Consulta con la clínica para conocer más tratamientos y tarifas.',
 ]
 
 const Pricing = () => {
   return (
-    <section id="tarifas" className="scroll-mt-28 bg-[#f6fbf7] py-24 pb-12">
+    <section id="tarifas" className="scroll-mt-28 bg-[#f6fbf7] py-16">
       <div className="mx-auto max-w-7xl px-4">
-        
-        {/* Título */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl">
-            Nuestras tarifas
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <span className="inline-block rounded-full bg-green-700 px-5 py-2 text-sm font-bold text-white">
+            Tarifas orientativas
+          </span>
+
+          <h2 className="mt-5 text-3xl font-extrabold text-green-700 sm:text-4xl">
+            Algunos de nuestros precios
           </h2>
 
-          <p className="mt-4 text-lg text-neutral-600">
-            Ofrecemos presupuestos personalizados según tus necesidades
+          <p className="mt-4 text-lg leading-8 text-neutral-600">
+            Queremos que tengas una referencia clara antes de venir. Estos
+            precios son orientativos y pueden variar según cada caso.
           </p>
         </div>
 
-        {/* Planes */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan, index) => (
             <article
               key={index}
-              className="rounded-xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(22,101,52,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.12)]"
+              className="relative overflow-hidden rounded-2xl bg-white px-6 py-8 text-center shadow-[0_10px_30px_rgba(22,101,52,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.12)]"
             >
-              <h3 className="text-2xl font-extrabold text-green-700">
+              {plan.badge && (
+                <span className="absolute right-4 top-4 rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700">
+                  {plan.badge}
+                </span>
+              )}
+
+              <h3 className="mt-6 text-xl font-extrabold text-green-700">
                 {plan.title}
               </h3>
 
-              <p className="mt-5 text-4xl font-extrabold tracking-tight text-green-700">
+              <p className="mt-5 text-5xl font-extrabold tracking-tight text-green-700">
                 {plan.price}
               </p>
 
-              <p className="mt-4 text-lg text-neutral-600">
+              <p className="mt-4 text-base leading-7 text-neutral-600">
                 {plan.subtitle}
               </p>
-
-              {plan.badge && (
-                <div className="mt-5">
-                  <span className="inline-flex rounded-full bg-green-700 px-4 py-1.5 text-sm font-bold text-white">
-                    {plan.badge}
-                  </span>
-                </div>
-              )}
             </article>
           ))}
         </div>
 
-        {/* Condiciones */}
-        <div className="mx-auto mt-12 max-w-4xl rounded-xl bg-white px-8 py-10 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-white px-8 py-8 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
           <h3 className="text-center text-2xl font-extrabold text-green-700">
-            Condiciones Generales
+            Información importante
           </h3>
 
-          <div className="mt-8 space-y-5">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {conditions.map((condition, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <span className="mt-1 text-xl font-bold text-green-700">✓</span>
-                <p className="text-lg leading-8 text-neutral-700">
+              <div key={index} className="flex items-start gap-3">
+                <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-100 text-sm font-bold text-green-700">
+                  ✓
+                </span>
+                <p className="text-base leading-7 text-neutral-700">
                   {condition}
                 </p>
               </div>
             ))}
           </div>
-        </div>
 
+          <div className="mt-8 text-center">
+            <a
+              href="/tratamientos"
+              className="inline-flex rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
+            >
+              Consultar más precios
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )

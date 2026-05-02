@@ -2,16 +2,14 @@ import { useEffect, useState } from 'react'
 
 const slides = [
   {
-    image:
-      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Dentista atendiendo a un paciente',
-    badge: 'Odontología cercana, profesional y personalizada',
+    image: '/clinica-dental-usera-interior.jpeg',
+    alt: 'Interior de la Clínica Dental Dra. Anna Tavarone en Usera',
+    badge: 'Clínica dental en Usera con atención cercana y profesional',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Clínica dental moderna',
-    badge: 'Cuidamos tu sonrisa con atención de confianza',
+    image: '/dra-anna-tavarone-clinica-dental-usera.png',
+    alt: 'Clínica Dental Dra. Anna Tavarone en Usera',
+    badge: 'Más de 30 años cuidando sonrisas en Usera',
   },
 ]
 
@@ -27,9 +25,8 @@ const WhyUs = () => {
   }, [])
 
   return (
-    <section className="bg-[#f6fbf7] py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 lg:grid-cols-2">
-        
+    <section className="bg-[#f6fbf7] py-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-2">
         <div className="relative">
           <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-green-700 lg:block [writing-mode:vertical-rl]">
             Dra. Anna Tavarone
@@ -45,18 +42,29 @@ const WhyUs = () => {
             </h2>
 
             <p className="mt-6 text-lg leading-9 text-neutral-700">
-              En Clínica Odontológica Dra. Anna Tavarone cuidamos tu salud
-              bucodental con una atención cercana, tratamientos personalizados
-              y un trato profesional de confianza.
+              En Clínica Dental Dra. Anna Tavarone cuidamos tu salud bucodental
+              con una atención cercana, tratamientos personalizados y un trato
+              profesional de confianza.
             </p>
 
-            <div className="mt-10 space-y-8">
+            <div className="mt-8 space-y-6">
+              <div>
+                <h3 className="text-2xl font-extrabold text-green-700">
+                  Más de 30 años en Usera
+                </h3>
+                <p className="mt-2 text-lg text-neutral-600">
+                  Nuestra experiencia nos permite ofrecer soluciones dentales
+                  adaptadas a cada paciente.
+                </p>
+              </div>
+
               <div>
                 <h3 className="text-2xl font-extrabold text-green-700">
                   Atención personalizada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Estudiamos cada caso para ofrecerte el tratamiento dental más adecuado.
+                  Estudiamos cada caso para recomendar el tratamiento dental más
+                  adecuado.
                 </p>
               </div>
 
@@ -65,7 +73,8 @@ const WhyUs = () => {
                   Trato cercano
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Queremos que te sientas cómodo, escuchado y seguro desde la primera visita.
+                  Queremos que te sientas cómodo, escuchado y seguro desde la
+                  primera visita.
                 </p>
               </div>
 
@@ -74,16 +83,8 @@ const WhyUs = () => {
                   Salud y estética dental
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Trabajamos para mejorar tanto la salud de tu boca como la estética de tu sonrisa.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-extrabold text-green-700">
-                  Experiencia profesional
-                </h3>
-                <p className="mt-2 text-lg text-neutral-600">
-                  Te acompañamos en cada paso con explicaciones claras y soluciones adaptadas.
+                  Trabajamos para mejorar tanto la salud de tu boca como la
+                  estética de tu sonrisa.
                 </p>
               </div>
             </div>
@@ -92,7 +93,7 @@ const WhyUs = () => {
 
         <div className="relative">
           <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(22,101,52,0.18)]">
-            <div className="relative h-[540px] w-full">
+            <div className="relative h-[500px] w-full">
               {slides.map((slide, index) => (
                 <img
                   key={index}
@@ -100,8 +101,8 @@ const WhyUs = () => {
                   alt={slide.alt}
                   className={`absolute inset-0 h-full w-full object-cover transition-all duration-1000 ${
                     currentSlide === index
-                      ? 'opacity-100 scale-100'
-                      : 'opacity-0 scale-105'
+                      ? 'scale-100 opacity-100'
+                      : 'scale-105 opacity-0'
                   }`}
                 />
               ))}

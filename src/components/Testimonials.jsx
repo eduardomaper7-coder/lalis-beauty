@@ -1,18 +1,18 @@
 const reviews = [
   {
-    text: 'Excelente atención desde el primer momento. Me explicaron todo el tratamiento dental paso a paso y el resultado ha sido increíble. Sin duda mi clínica de confianza.',
-    name: 'Alba',
+    text: 'Anna es una excelente odontóloga, llevo años acudiendo a su consulta siempre que lo necesito y tanto sus servicios, como el trato recibido por ella y el personal de la clínica han sido excelentes. Totalmente recomendable.',
+    name: 'Juan S.',
     time: 'Hace 1 año',
   },
   {
-    text: 'Fui por un problema en una muela y el trato fue impecable. Muy profesionales y cuidadosos en todo momento. Me sentí muy tranquilo durante todo el tratamiento.',
-    name: 'K. Meneses',
-    time: 'Hace 3 meses',
+    text: 'Llevo yendo a esta clínica 20 años, creo que con eso es suficiente para decir que trabajan muy bien y solucionan tus problemas bucodentales sin dolor.',
+    name: 'Esther P.',
+    time: 'Hace 2 años',
   },
   {
-    text: 'Grandes profesionales. Te hacen sentir cómoda desde que entras y cuidan cada detalle. Estoy muy contenta con el resultado de mi tratamiento.',
-    name: 'P. Fernández',
-    time: 'Hace 1 año',
+    text: 'Excelente tanto en el trato como en el servicio, estoy encantada con ellos, son unos magnificos profesionales.',
+    name: 'Ivan A.',
+    time: 'Hace 1 mes',
   },
 ]
 
@@ -30,7 +30,7 @@ const Testimonials = () => {
           </div>
 
           <p className="mt-4 text-lg text-neutral-600">
-            Valoración 5.0 en Google Reviews
+            Valoración 4.6 en Google Reviews
           </p>
         </div>
 

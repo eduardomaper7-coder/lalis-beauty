@@ -11,8 +11,22 @@ import BlogSection from './components/BlogSection'
 import Location from './components/Location'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import AllTreatments from './components/AllTreatments'
 
 function App() {
+  const isTreatmentsPage = window.location.pathname === '/tratamientos'
+
+  if (isTreatmentsPage) {
+    return (
+      <main className="bg-white text-black">
+        <TopBar />
+        <Navbar />
+        <AllTreatments />
+        <Footer />
+      </main>
+    )
+  }
+
   return (
     <main className="bg-white text-black">
       <TopBar />

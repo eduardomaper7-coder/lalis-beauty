@@ -1,45 +1,47 @@
 const services = [
   {
-    title: 'Odontología general',
+    title: 'Fundas de porcelana y siliconio',
     description:
-      'Revisiones, limpiezas, empastes y tratamientos preventivos para cuidar tu salud bucodental y mantener una sonrisa sana.',
-    image:
-      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80',
+      'Soluciones estéticas y funcionales para proteger dientes debilitados, mejorar la mordida y recuperar una sonrisa natural.',
+    image: '/funda-porcelana-siliconio-usera.jpg',
   },
   {
-    title: 'Ortodoncia',
+    title: 'Tratamiento de encías',
     description:
-      'Tratamientos para alinear los dientes, mejorar la mordida y conseguir una sonrisa más estética, cómoda y funcional.',
-    image:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=80',
+      'Diagnóstico y tratamiento de problemas periodontales para cuidar tus encías, prevenir molestias y conservar tus dientes.',
+    image: '/tratamiento-encias-usera.webp',
   },
   {
-    title: 'Estética dental',
+    title: 'Implantes dentales',
     description:
-      'Blanqueamiento, carillas y tratamientos personalizados para mejorar la apariencia de tu sonrisa de forma natural.',
-    image:
-      'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80',
+      'Recupera piezas dentales perdidas con soluciones seguras, estables y pensadas para mejorar la masticación y la estética.',
+    image: '/implantes-dentales-usera.jpg',
   },
   {
-    title: 'Implantes y prótesis',
+    title: 'Endodoncia',
     description:
-      'Soluciones para recuperar piezas dentales perdidas, mejorar la masticación y devolver seguridad a tu sonrisa.',
-    image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80',
+      'Tratamiento para salvar dientes dañados o infectados, aliviar el dolor y evitar la extracción cuando es posible.',
+    image: '/endodoncia-usera.png',
   },
 ]
 
 const Treatments = () => {
   return (
-    <section id="servicios" className="scroll-mt-28 bg-[#f6fbf7] py-24">
+    <section id="servicios" className="scroll-mt-28 bg-[#f6fbf7] py-16">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl">
-            Nuestros servicios dentales
+          <span className="text-sm font-bold uppercase tracking-[0.25em] text-green-600">
+            Tratamientos destacados
+          </span>
+
+          <h2 className="mt-3 text-3xl font-extrabold text-green-700 sm:text-4xl">
+            Servicios dentales en Usera
           </h2>
 
-          <p className="mt-4 text-lg text-neutral-600 sm:text-xl">
-            En Clínica Odontológica Dra. Anna Tavarone ofrecemos tratamientos dentales personalizados para cuidar tu salud bucodental.
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-neutral-600 sm:text-xl">
+            En Clínica Dental Dra. Anna Tavarone destacamos algunos de nuestros
+            tratamientos más solicitados, aunque contamos con muchos más
+            servicios para cuidar tu salud bucodental.
           </p>
         </div>
 
@@ -47,13 +49,14 @@ const Treatments = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:shadow-[0_15px_40px_rgba(22,101,52,0.16)]"
+              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.16)]"
             >
               <div className="w-[40%]">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} en Usera - Clínica Dental Dra. Anna Tavarone`}
                   className="h-full w-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -70,15 +73,28 @@ const Treatments = () => {
 
                 <div className="mt-6">
                   <a
-                    href="#contacto"
+                    href="/tratamientos"
                     className="inline-flex items-center gap-2 text-base font-semibold text-green-700 transition hover:text-green-900"
                   >
-                    Más información →
+                    Pedir información →
                   </a>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <p className="text-lg font-medium text-neutral-700">
+            ¿Buscas otro tratamiento dental?
+          </p>
+
+          <a
+            href="/tratamientos"
+            className="mt-5 inline-flex items-center rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
+          >
+            Ver todos los tratamientos
+          </a>
         </div>
       </div>
     </section>
