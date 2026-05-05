@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 
 const services = [
   {
-    title: 'Fundas de porcelana y siliconio',
+    title: 'Fundas de porcelana y Zirconio',
     description:
       'Soluciones estéticas y funcionales para proteger dientes debilitados, mejorar la mordida y recuperar una sonrisa natural.',
     image: '/funda-porcelana-siliconio-usera.jpg',
   },
   {
-    title: 'Tratamiento de encías',
+    title: 'Tratamiento de encías (encías sangrantes)',
     description:
       'Diagnóstico y tratamiento de problemas periodontales para cuidar tus encías, prevenir molestias y conservar tus dientes.',
     image: '/tratamiento-encias-usera.webp',

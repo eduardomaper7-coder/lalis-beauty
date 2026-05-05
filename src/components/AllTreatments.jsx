@@ -20,7 +20,7 @@ const treatments = [
     image: '/fundas-zirconio-usera.jpg',
   },
   {
-    name: 'Frenillo de lengua',
+    name: 'Frenectomia (cirugía de frenillo)',
     price: '400 €',
     image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
   },

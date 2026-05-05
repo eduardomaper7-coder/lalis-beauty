@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const plans = [
   {
     title: 'Empaste dental',
@@ -98,12 +100,12 @@ const Pricing = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <a
-              href="/tratamientos"
+            <Link
+              to="/tratamientos"
               className="inline-flex rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
             >
               Consultar más precios
-            </a>
+            </Link>
           </div>
         </div>
       </div>
