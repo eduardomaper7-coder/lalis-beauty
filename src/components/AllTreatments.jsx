@@ -47,7 +47,7 @@ const treatments = [
   },
   {
     name: 'Empastes',
-    price: '80 €',
+    price: '70 €',
     image: '/empastes-usera.jfif',
   },
   {

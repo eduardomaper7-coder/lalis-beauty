@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const plans = [
   {
     title: 'Empaste dental',
-    price: '80€',
+    price: '70€',
     subtitle: 'Tratamiento conservador para reparar caries o pequeñas fracturas.',
     badge: 'Precio orientativo',
   },
