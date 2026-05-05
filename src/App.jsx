@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop'
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Treatments from './components/Treatments'
@@ -38,6 +40,10 @@ const Home = () => (
 function App() {
   return (
     <main className="bg-white text-black">
+
+      {/* 🔥 ESTO ES LO IMPORTANTE */}
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
 
