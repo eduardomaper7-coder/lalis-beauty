@@ -9,7 +9,6 @@ import WhyUs from './components/WhyUs'
 import FeaturedBox from './components/FeaturedBox'
 import HowWeWork from './components/HowWeWork'
 import Testimonials from './components/Testimonials'
-import Pricing from './components/Pricing'
 import BlogSection from './components/BlogSection'
 import Location from './components/Location'
 import ContactSection from './components/ContactSection'
@@ -29,7 +28,6 @@ const Home = () => (
     <FeaturedBox />
     <HowWeWork />
     <Testimonials />
-    <Pricing />
     <BlogSection />
     <Location />
     <ContactSection />

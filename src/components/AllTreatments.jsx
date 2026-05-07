@@ -1,64 +1,57 @@
 const treatments = [
   {
     name: 'Implantes + corona',
-    price: '1.500 €',
-    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Endodoncia',
-    price: '220 €',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Fundas porcelana',
-    price: '240 €',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Fundas zirconio',
-    price: '420 €',
     image: '/fundas-zirconio-usera.jpg',
   },
   {
     name: 'Frenectomia (cirugía de frenillo)',
-    price: '400 €',
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Tratamiento encías',
-    price: '400 €',
     image: '/tratamiento-encias-usera.jpg',
     note: 'Raspajes',
   },
   {
     name: 'Blanqueamiento',
-    price: '350 €',
     image: '/blanqueamiento-dental-usera.jpg',
   },
   {
     name: 'Prótesis total',
-    price: '950 €',
     image: '/protesis-total-usera.jpg',
   },
   {
     name: 'Limpieza',
-    price: '70 €',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Empastes',
-    price: '70 €',
     image: '/empastes-usera.jfif',
   },
   {
     name: 'Cirugía',
-    price: '180 €',
     image: '/cirugia-dental-usera.jpg',
-    note: 'Injerto incluido',
+    note: 'Tercer molar incluido',
   },
   {
     name: 'Exodoncia',
-    price: '70 €',
     image: '/exodoncia-usera.webp',
   },
 ]
@@ -73,7 +66,7 @@ const AllTreatments = () => {
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-tight text-green-700 sm:text-5xl">
-            Tratamientos dentales y precios orientativos
+            Tratamientos dentales
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-neutral-700">
@@ -99,22 +92,16 @@ const AllTreatments = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h2 className="text-2xl font-extrabold text-green-700">
-                      {treatment.name}
-                    </h2>
+                <div>
+                  <h2 className="text-2xl font-extrabold text-green-700">
+                    {treatment.name}
+                  </h2>
 
-                    {treatment.note && (
-                      <p className="mt-1 text-sm font-semibold text-neutral-500">
-                        {treatment.note}
-                      </p>
-                    )}
-                  </div>
-
-                  <p className="shrink-0 rounded-xl bg-green-100 px-4 py-2 text-xl font-extrabold text-green-700">
-                    {treatment.price}
-                  </p>
+                  {treatment.note && (
+                    <p className="mt-1 text-sm font-semibold text-neutral-500">
+                      {treatment.note}
+                    </p>
+                  )}
                 </div>
 
                 <a
@@ -161,11 +148,6 @@ const AllTreatments = () => {
               Llamar ahora
             </a>
           </div>
-
-          <p className="mt-8 text-sm text-neutral-500">
-            *Los precios y servicios pueden sufrir cambios. Los importes son
-            orientativos y pueden variar según valoración profesional.
-          </p>
         </div>
       </section>
     </main>
