@@ -1,78 +1,70 @@
 const treatments = [
   {
-    name: 'Implantes + corona',
+    name: 'Manicura clásica',
     image:
-      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Endodoncia',
+    name: 'Manicura semipermanente',
     image:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Fundas porcelana',
+    name: 'Pedicura estética',
     image:
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Fundas zirconio',
-    image: '/fundas-zirconio-usera.jpg',
-  },
-  {
-    name: 'Frenectomia (cirugía de frenillo)',
+    name: 'Pedicura completa',
     image:
-      'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Tratamiento encías',
-    image: '/tratamiento-encias-usera.jpg',
-    note: 'Raspajes',
-  },
-  {
-    name: 'Blanqueamiento',
-    image: '/blanqueamiento-dental-usera.jpg',
-  },
-  {
-    name: 'Prótesis total',
-    image: '/protesis-total-usera.jpg',
-  },
-  {
-    name: 'Limpieza',
+    name: 'Diseño de uñas',
     image:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1599206676335-193c82b13c9e?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Empastes',
-    image: '/empastes-usera.jfif',
+    name: 'Uñas acrílicas',
+    image:
+      'https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80',
   },
   {
-    name: 'Cirugía',
-    image: '/cirugia-dental-usera.jpg',
-    note: 'Tercer molar incluido',
+  name: 'Uñas de gel',
+  image:
+    'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80',
+},
+  {
+    name: 'Retirada de esmalte',
+    image:
+      'https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80',
+    note: 'Cuidado suave de la uña natural',
   },
   {
-    name: 'Exodoncia',
-    image: '/exodoncia-usera.webp',
+    name: 'Decoración personalizada',
+    image:
+      'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80',
+    note: 'Nail art y acabados especiales',
   },
 ]
 
 const AllTreatments = () => {
   return (
-    <main className="bg-[#f6fbf7] pt-32 pb-20">
+    <main className="bg-[#f4eadf] pt-32 pb-20">
       <section className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-12 max-w-4xl text-center">
-          <span className="inline-flex rounded-full bg-green-700 px-5 py-2 text-sm font-bold text-white">
-            Radiografía y presupuesto gratis
+          <span className="inline-flex rounded-full bg-[#8a6242] px-5 py-2 text-sm font-bold text-white">
+            Manicura y pedicura en Getafe
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-tight text-green-700 sm:text-5xl">
-            Tratamientos dentales
+          <h1 className="mt-6 text-4xl font-extrabold leading-tight text-[#7a5638] sm:text-5xl">
+            Servicios de belleza
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-neutral-700">
-            Consulta nuestros tratamientos más habituales. Para recibir una
-            valoración personalizada, consulte con la doctora o contacte con
-            nuestra clínica.
+            Consulta nuestros servicios más habituales. Para recibir una
+            atención personalizada, contacta con Lalis Beauty Salon y reserva tu
+            cita.
           </p>
         </div>
 
@@ -80,12 +72,12 @@ const AllTreatments = () => {
           {treatments.map((treatment, index) => (
             <article
               key={index}
-              className="overflow-hidden rounded-3xl bg-white shadow-[0_10px_30px_rgba(22,101,52,0.10)] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(22,101,52,0.16)]"
+              className="overflow-hidden rounded-3xl bg-white shadow-[0_10px_30px_rgba(122,86,56,0.10)] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(122,86,56,0.16)]"
             >
               <div className="h-48 overflow-hidden">
                 <img
                   src={treatment.image}
-                  alt={`${treatment.name} en Usera - Clínica Dental Dra. Anna Tavarone`}
+                  alt={`${treatment.name} en Getafe - Lalis Beauty Salon`}
                   className="h-full w-full object-cover transition duration-500 hover:scale-105"
                   loading="lazy"
                 />
@@ -93,7 +85,7 @@ const AllTreatments = () => {
 
               <div className="p-6">
                 <div>
-                  <h2 className="text-2xl font-extrabold text-green-700">
+                  <h2 className="text-2xl font-extrabold text-[#7a5638]">
                     {treatment.name}
                   </h2>
 
@@ -106,7 +98,7 @@ const AllTreatments = () => {
 
                 <a
                   href="/#contacto"
-                  className="mt-6 inline-flex font-bold text-green-700 transition hover:text-green-900"
+                  className="mt-6 inline-flex font-bold text-[#8a6242] transition hover:text-[#6f4e37]"
                 >
                   Más información →
                 </a>
@@ -115,20 +107,20 @@ const AllTreatments = () => {
           ))}
         </div>
 
-        <div className="mx-auto mt-14 max-w-5xl rounded-3xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(22,101,52,0.10)]">
-          <h2 className="text-3xl font-extrabold text-green-700">
-            ¿Necesitas otro tratamiento?
+        <div className="mx-auto mt-14 max-w-5xl rounded-3xl bg-white px-8 py-10 text-center shadow-[0_10px_30px_rgba(122,86,56,0.10)]">
+          <h2 className="text-3xl font-extrabold text-[#7a5638]">
+            ¿Quieres otro servicio?
           </h2>
 
           <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-neutral-700">
-            Si necesita un tratamiento adicional que no aparece en esta página,
-            no dude en consultar con nuestro equipo. Le atenderemos personalmente
-            en nuestra clínica o llamando al{' '}
+            Si buscas un servicio adicional que no aparece en esta página,
+            consúltanos sin compromiso. Te atenderemos personalmente en nuestro
+            salón o llamando al{' '}
             <a
-              href="tel:914763069"
-              className="inline-block whitespace-nowrap font-extrabold text-green-700 hover:underline"
+              href="tel:647338753"
+              className="inline-block whitespace-nowrap font-extrabold text-[#8a6242] hover:underline"
             >
-              914 76 30 69
+              647 338 753
             </a>
             .
           </p>
@@ -136,14 +128,14 @@ const AllTreatments = () => {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="/#contacto"
-              className="rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
+              className="rounded-xl bg-[#8a6242] px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-[#6f4e37]"
             >
               Más información
             </a>
 
             <a
-              href="tel:914763069"
-              className="rounded-xl border-2 border-green-700 px-8 py-4 text-lg font-bold text-green-700 transition hover:bg-green-700 hover:text-white"
+              href="tel:647338753"
+              className="rounded-xl border-2 border-[#8a6242] px-8 py-4 text-lg font-bold text-[#8a6242] transition hover:bg-[#8a6242] hover:text-white"
             >
               Llamar ahora
             </a>

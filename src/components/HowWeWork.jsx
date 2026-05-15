@@ -1,59 +1,64 @@
-import { FaStethoscope, FaMagic, FaAward, FaUsers } from 'react-icons/fa'
+import {
+  FaHandSparkles,
+  FaSpa,
+  FaPaintBrush,
+  FaHeart,
+} from 'react-icons/fa'
 
 const features = [
   {
-    icon: <FaStethoscope />,
-    title: 'Valoración y diagnóstico personalizado',
-    text: 'Analizamos tu salud bucodental con detalle para ofrecerte un tratamiento totalmente adaptado a tus necesidades.',
+    icon: <FaHandSparkles />,
+    title: 'Manicura profesional',
+    text: 'Cuidamos tus uñas y manos con acabados elegantes, modernos y duraderos.',
   },
   {
-    icon: <FaMagic />,
-    title: 'Tecnología avanzada',
-    text: 'Trabajamos con equipos modernos para garantizar tratamientos más precisos, cómodos y efectivos.',
+    icon: <FaSpa />,
+    title: 'Pedicura y bienestar',
+    text: 'Tratamientos pensados para embellecer tus pies y aportar sensación de relajación y cuidado.',
   },
   {
-    icon: <FaAward />,
-    title: 'Experiencia profesional',
-    text: 'Contamos con profesionales cualificados en odontología para cuidar tu salud y estética dental.',
+    icon: <FaPaintBrush />,
+    title: 'Diseños personalizados',
+    text: 'Creamos estilos únicos y personalizados para resaltar tu belleza en cada detalle.',
   },
   {
-    icon: <FaUsers />,
+    icon: <FaHeart />,
     title: 'Atención cercana',
-    text: 'Te acompañamos en todo el proceso para que te sientas cómodo y con confianza en cada visita.',
+    text: 'Te ofrecemos un trato amable y profesional para que disfrutes de una experiencia cómoda y agradable.',
   },
 ]
 
 const HowWeWork = () => {
   return (
-    <section className="bg-[#f6fbf7] py-24">
+    <section className="bg-[#f4eadf] py-24">
       <div className="mx-auto max-w-7xl px-4">
         
         {/* Título */}
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-extrabold text-green-700 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-[#7a5638] sm:text-4xl">
             ¿Cómo trabajamos?
           </h2>
 
           <p className="mt-4 text-neutral-600">
-            Nuestro proceso está diseñado para cuidar tu salud bucodental desde el primer momento
+            En Lalis Beauty Salon cuidamos cada detalle para ofrecerte una experiencia de belleza única
           </p>
         </div>
 
         {/* Caja principal */}
-        <div className="rounded-3xl bg-white p-8 shadow-[0_20px_60px_rgba(22,101,52,0.08)] md:p-12">
+        <div className="rounded-3xl bg-white p-8 shadow-[0_20px_60px_rgba(122,86,56,0.08)] md:p-12">
           <div className="grid gap-10 md:grid-cols-2">
             
             {features.map((item, index) => (
               <div key={index} className="flex gap-5">
                 
                 {/* Icono */}
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-700 text-xl text-white">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#8a6242] text-xl text-white">
                   {item.icon}
                 </div>
 
                 {/* Texto */}
                 <div>
-                  <h3 className="text-lg font-extrabold text-green-700">
+                  <h3 className="text-lg font-extrabold text-[#7a5638]">
                     {item.title}
                   </h3>
 
